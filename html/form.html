@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/action">
+    <!-- action attribute is used to define what action is to be performed when a form is submitted -->
+    <!-- input is used to create multiple form controls...there are multiple types of inputs that can be created using type attribute -->  
+        Username:<input type="text"><br>
+        Password:<input type="password"><br>
+        Number:<input type="number"><br>
+        Time:<input type="date"><br>
+        button:<input type="button"><br><!--not much preferable-->
+        checkbox:<input type="checkbox"><br>
+        color:<input type="color"><br>
+        datetime:<input type="datetime-local"><br>
+    <!--placeholder is used to see the dumy content writen at back -->
+        Username:<input type="text" placeholder="Enter Name"><br>
+        Password:<input type="password" placeholder="Enter password"><br>
+    <!--lable:when we click on text outside or inside placeholder it will go in placeholder only-->
+       <label>
+        Username:<input type="text" placeholder="Enter Name"><br>
+       </label>
+       <label>  
+        Password:<input type="password" placeholder="Enter password"><br>
+       </label>
+    <!--more preferable way of writing the lable to add css in id-->
+        <label for="name">Enter user Name:</label>
+        <input type="text" placeholder="Enter Name" name="user" id="name"><br>
+        <label for="pass">Enter password:</label>
+        <input type="text" placeholder="Enter password" name="password" id="pass">
+    <!--name is added to give the info to backend -->
+     <!--button-->   
+        <button>submit</button><!--by default the behaviour of any thing written in button is submit-->
+        <button>hello</button><!--do exactly same as above one-->
+        <button type="submit">Submit</button><!--do exactly same as above one-->
+        <button type="button">normal button</button><!--no action performed-->
+        <button type="reset">reset button</button><!--refresh the entry-->
+
+    <!--not preferable to display button by using input-->    
+      <input type="button" value="click me" >
+      <input type="submit" value="submit me" > 
+
+      
+    </form>
+   <hr>
+   <!--make your own search box using youtube--> 
+   <form action="https://www.youtube.com/results">
+    <!--action attribute is used to define what action is to be performed when a form is submitted -->
+    <label for="se"> youtube Search:</label>
+    <!--for is used to link the label with input-->
+        <input type="text" name="search_query" placeholder="search here" id="se">
+        <button type="submit">Search</button>
+    <!--search_query is the parameter that youtube uses to search for videos-->
+    <!--when we click on search button it will take us to the youtube search page with the search query we entered-->
+   </form>
+   <hr>
+   <!--checkbox-->
+   <p>checkbox:</p>
+   <form action="/se"><!--in url it will show ip/se?age=on-->
+   <input type="checkbox" name="age" id="age" checked><!--as checked means by default checked-->
+   <label for="age">I am 18+</label>
+   <button>submit</button>
+   <hr>
+   <p>radiobutton:</p>
+   <input type="radio" name="cse" id="cse" value="cse"><!--value for sending to server-->
+   <lable for="cse">cse</lable>
+   <button>submit</button>
+   <hr>
+   </form>
+ <!--range,radio,checkbox,select,textarea is also there in other .html file-->
+</body>
+</html>
