@@ -1,7 +1,7 @@
 ###  Frontend
 - HTML5
 - CSS3
-- JavaScript (Vanilla)
+- JavaScript
 - React (optional for dynamic UI)
 
 ###  Backend
