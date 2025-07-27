@@ -1,6 +1,7 @@
 ###  Frontend
 - HTML5
 - CSS3
+- Bootstrap
 - JavaScript
 - React (optional for dynamic UI)
 
