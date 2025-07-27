@@ -1,0 +1,43 @@
+div{text-align: center;
+    background-color: rgba(71, 60, 60, 0.871);
+
+}
+h1,.i{ 
+    border:solid black;
+    height:fit-content;
+    width:400px;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: rgb(50, 176, 255);
+}
+h2{
+    color: rgb(4, 4, 49);
+}
+  /* 
+   override */
+.i{
+    background-color: lightblue;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+    
+}
+.btn{
+    background-color: rgb(4, 4, 49);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(50, 176, 255);
+    color: black;
+}
+button{
+    background-color: inherit;
+    box-shadow: 0 0 10px rgba(76, 142, 192, 0.5);
+}
+button:hover{
+    background-color: rgba(71, 60, 60, 0.871);
+    color: white;
+}

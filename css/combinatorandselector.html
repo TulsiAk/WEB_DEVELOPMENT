@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="combinatorandselector.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- to practice CSS  combinators and selectors -->
+
+    <h1>CSS Combinators and Selectors Practice</h1>
+    <!-- id selector used to select an element with a specific id -->
+    <div id="unique-element">Unique Element</div>
+
+    <!-- class selector used to select elements with a specific class -->
+    <!-- diff between id and class selector is that id is unique in the document while class can be used multiple times -->
+    <div >
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <!-- descendant selector used to select elements that are descendants of a specific element -->
+    <div class="container">
+        <div class="child">
+            <p>Child Paragraph</p>
+        </div>
+    </div>
+    <!-- child selector used to select elements that are direct children of a specific element -->
+    <div class="parent">
+        <div class="child">Direct Child</div>
+        <div class="child">
+            Sec Child
+        </div>
+    </div>
+    <!-- adjacent sibling selector used to select an element that is immediately preceded by a specific element -->
+    <div class="sibling-container">
+        <div class="sibling">First Sibling</div>
+        <div class="sibling">Adjacent Sibling</div>
+    </div>
+    <!-- general sibling selector used to select all siblings of a specific element -->
+    <div class="general-sibling-container">
+        <div class="sibling">Sibling 1</div>
+        <div class="sibling">Sibling 2</div>
+        <div class="sibling">Sibling 3</div>
+    </div>
+    <!-- attribute selector used to select elements with a specific attribute -->
+    <div class="attribute-container">
+        <input type="text" placeholder="Text Input" />
+        <input type="checkbox" checked />i,agree all terms
+       
+    </div>
+    <!-- pseudo-class selector used to select elements in a specific state -->
+    <button class="pseudo-class-button">Hover over me</button>
+ 
+    <!-- combinators -->
+     <div class="combinators">
+        <p>Combinators allow you to select elements based on their relationship to other elements.</p>
+        <h2>Types of Combinators</h2>
+        <ul>
+            <li>Descendant Combinator (space)</li>
+            <li>Child Combinator (>)</li>
+            <li>Adjacent Sibling Combinator (+)</li>
+            <li>General Sibling Combinator (~)</li>
+        </ul>
+     </div>
+
+       
+</body>
+</html>

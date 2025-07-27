@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="position.css">
+</head>
+<body>
+    <h1>CSS Position Property</h1>
+    <p>The position CSS PROPERTY SETS HOW AN ELEMENT IS POSITIONED IN A DOCUMENT</p>
+    <p>The top,right,bottom and left properties determine the final location of positional elements</p>
+    <ul>
+        <li>static: the top,right,left,z-index property have no effect.this is the default value.</li>
+        <section>
+            <div></div>
+            <div id="static"></div>
+            <div></div>
+        </section>
+        <li>relative: the offset is relative to itself based on the values of top,right,bottom and left </li>
+        <section>
+            <div></div>
+            <div id="relative"></div>
+            <div></div>
+        </section>
+        <li>absolute:the element is moved  from the normal document flow,and no space is created for the element in the page.it is positioned relative to its closest positioned ancestor,if any otherwise ,it is placed relative to the initial containing block</li>
+        <section>
+            <div></div>
+            <div id="absolute"></div>
+            <div></div>
+        </section>
+        <li>fixed: the element is removed from the normal document flow and no space created for it and is positioned relative to the viewport. It will not move when scrolled.</li>
+     <section>
+            <div></div>
+            <div id="fixed"></div>
+            <div></div>
+        </section>
+    </ul>
+   
+</body>
+</html>

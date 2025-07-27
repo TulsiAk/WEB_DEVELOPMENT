@@ -1,0 +1,60 @@
+
+
+.red{
+    border:solid black;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;  
+    margin: 10px;
+    background-color: red;
+}
+.green{
+    border:solid black;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%; 
+    margin: 10px;
+    background-color: green;
+}
+.yellow{
+    border:solid black;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%; 
+    margin: 10px;
+    background-color: yellow;
+
+}
+
+.red, .green, .yellow {
+    box-shadow: 5px 5px 10px rgba(0,0,0,7.5);
+    /* x,y,blurradius */
+    /*rgba(0,0,0,7.5) means to apply a shadow with red, green, blue and alpha values */
+    /* alpha value means the opacity of the shadow.its range is between 0 and 1.closer to zero means more blur and vice versa */
+}
+.red:hover,.green:hover,.yellow:hover{
+
+    transform: scale(1.1);
+    /* transform scale means to increase or decrease the size of the element */
+    transition-delay: 1s;
+    /* transition-delay means to delay the transition effect */
+    transition: all 0.3s ease-in-out;
+    /* transition means to apply the transition effect */
+    /* all means to apply the transition effect to all properties */
+    cursor: pointer;
+    /* cursor pointer means to change the cursor to pointer when hovering over the element */
+}
+.tl{
+    border:solid black;
+    height: 350px;
+    /* height of the traffic light */
+    width: 100px;
+    /* width of the traffic light */
+    margin: 20px;
+    /* margin means to add space around the traffic light */
+    padding-right: 25px;
+    /* padding-right means to add space inside the traffic light */
+    background-color: #333;
+    box-shadow: 10px 10px 20px rgba(1,1,1,3.5);
+
+}

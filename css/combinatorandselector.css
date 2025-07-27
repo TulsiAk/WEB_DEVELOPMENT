@@ -1,0 +1,67 @@
+ /* CSS styles for the elements */
+        #unique-element {
+            color: blue;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .item {
+            color: #032703;
+            height: 20px;
+            width: 50px;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+            font-family: 'Lucida Sans', sans-serif;
+            background-color: lightblue;
+            
+
+        }
+        .container .child p {
+            color: red;
+            font-size: 16px;
+            font-style: italic;
+            text-decoration: underline;
+            font-family: 'Courier New', Courier, monospace;
+
+        }
+        .container .child p:hover {
+            color: green;
+            font-weight: bold;
+            text-decoration: none;
+
+        }
+        .parent > .child {
+            background-color: rgb(60, 247, 27);
+            border: 2px solid black;
+            width: 120px;
+            height: 20px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+       
+        .sibling-container > .sibling + .sibling {
+            color: purple;
+        
+        }
+        .general-sibling-container .sibling {
+            font-style: italic;
+        }
+        .attribute-container input[type="text"] {
+            border: 1px solid black;
+        }
+        .pseudo-class-button:hover {
+            background-color: yellow;
+        }
+        .combinators  >p{
+            color:rgb(0, 183, 255);
+            font-size: 12px;
+        }
+        .combinators  p + h2 {
+            color: rgb(67, 3, 244);
+    
+        }
+        .combinators ul {
+            list-style-type: style type circle;;
+            padding-left: 20px;
+        }

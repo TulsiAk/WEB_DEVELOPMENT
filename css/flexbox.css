@@ -1,0 +1,49 @@
+#main{
+    height:400px;
+    width: 80%;;
+    border:black solid ;
+   
+    display: flex;
+    flex-direction: column;
+    /* flex-direction controls which in which order the items are placed in the container */
+    /* flex-direction: row;  items are placed in a row from left to right */
+    /* flex-direction: column;  items are placed in a column from top to bottom */
+    /* flex-direction: column-reverse;  items are placed in a column from bottom to top last element at first */
+    /* flex-direction: row-reverse;  items are placed in a row from right to left last element at first */
+    /*by default it is row*/
+    justify-content: flex-start;
+    /* justify distribute the space between the items in the container */
+    /*give space around the items*/
+    /* justify-content:end align items to the end of the container*/
+    /* justify-content:start align items to the start of the container*/
+    /* justify-content: center;  align items to the center of the container*/
+    /* justify-content: space-evenly;  align items with equal space around them*/
+    /* justify-content: space-around;  align items with equal space around them, but less space at the ends*/
+    /* justify-content: space-between;  align items to the start and end of the container with equal space between them*/
+    
+    flex-wrap: wrap;
+    /* flex-wrap controls whether the items in the container should wrap to the next line or not */
+    /* flex-wrap: nowrap;  items will not wrap to the next line ,by default*/
+    /* flex-wrap: wrap;  items will wrap to the next line if there is not enough space in the container */
+    /* flex-wrap: wrap-reverse;  items will wrap to the next line in reverse order */
+    align-items:flex-end;
+
+}
+div:nth-of-type(2n) {
+    border:black solid 1px;
+    background-color: lightblue;
+}
+div:nth-of-type(2n-1) {
+    border:black solid 1px;
+    background-color: rgb(188, 230, 173);
+}
+h1{
+    text-align: center;
+    color: darkblue;
+}
+.cont{
+    height:50px;
+    width: 100px;
+   text-align:center;
+   padding-top:20px
+}

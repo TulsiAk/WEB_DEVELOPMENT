@@ -1,0 +1,20 @@
+/*universal selector*/
+*{
+    color:#ffa511;/*CHANGE COLOR*/
+    text-align: center;/* MOVE TEXT TO CENTRE*/
+    line-height:0.5;/* SPACING BETWEEN TWO LINES*/
+    font-style: italic;/* FONT STYLE TO  ITALIC*/
+    font-weight: 700; /* FONT THICKNESS INC*/
+}
+/*element selector*/
+h1{
+    letter-spacing:1mm;/*SPACING BETWEEN LETTERS*/
+    text-decoration:underline;/* UNDERLINE WORDS*/
+    text-decoration-color: teal;/* UNDERLINE COLOR*/
+}
+p{
+    font-size: 12px;
+    color: rgb(10, 10, 27);/*overwrite orange color*/
+ text-transform:uppercase;/*transform to uppercase*/
+ text-decoration: rgb(44, 242, 242) double underline;/*double underline and color in one line*/
+}

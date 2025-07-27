@@ -1,0 +1,101 @@
+/* a keyword added to a selector that specifies a special state of the selected elements
+hover
+active
+checked
+nth-of-type */
+h1{
+    text-decoration:underline ;
+    text-shadow:2px 2px 4px rgba(88, 5, 5, 0.5);
+    text-decoration-thickness: 2px;
+    color: brown;
+}
+button{
+    /* button style */
+    color:brown;
+    background-color:aqua;
+}
+button:hover{
+    /* when hover on button color change */
+    background-color: rgb(6, 116, 50);
+    color: aquamarine;
+}
+ h1:hover{   
+/*when take the cursor to it color change */
+    text-decoration:none;
+}
+button:active{   
+    /* when click to it color change */
+    background-color: hotpink;
+}
+input[type="radio"]:checked + label {
+/* input + label means when the radio button is checked, the label will change  this is a sibling combinator */
+/* sibling combinator is used to select an element that is directly after another element */
+color: hotpink;
+    font-weight: bold;
+}
+input[type="radio"] + label {
+    /* when the radio button is not checked, the label will have this style */
+    color: rgb(31, 153, 175);
+    font-weight: normal;
+}
+input[type="checkbox"]:checked + label{
+/* when the checkbox is checked, the label will change */
+    color: blue;
+    font-weight: bold;
+}
+div:nth-of-type(2n) {
+    /* select every second div */
+    background-color: lightblue;
+}
+input::placeholder {
+    /* style the placeholder text */
+    color: rgb(137, 223, 243);
+    font-style: italic;
+    font-size: 14px;}
+
+
+/* pseudo element */
+    /* a keyword added to a selector that specifies a special state of the selected elements */
+    /* pseudo element is used to style a specific part of an element */
+    /* ::before and ::after are pseudo elements */
+    /* ::before is used to insert content before an element */
+    /* ::after is used to insert content after an element */
+h1::first-letter  {
+    /* style the first letter of the h1 element */
+    color: rgb(7, 131, 77);
+    font-size: 70px;
+    font-weight: bold;
+}
+/* change 12th letter of h1 to red */
+/* as there is no direct way in css to make f in registration form to red we use span tag */
+#re{
+    /* style the span with id re */
+    color: rgb(2, 69, 37);
+    font-size: 70px;
+    font-weight: bold;
+
+}
+    /* h1::first-line {
+     style the first line of the h1 element 
+    color: rgb(7, 131, 77);
+    font-size: 30px;
+    font-weight: bold;
+}
+ */
+h1::selection{
+    /* style the selected text of the h1 element */
+    background-color: rgb(255, 255, 0);
+    color: black;
+}
+/* specificity  is a combination of inline styles, ids, classes, and elements  */
+/* inline>id>class,attribute and pseudo class>elements and pseudo element */
+/* specificity is used to determine which styles will be applied to an element when there are conflicting styles */
+/* inline styles have the highest specificity, followed by ids, classes, and elements */
+/* inline example writing in html as style=background-color: red; */
+/*id means the id of the element in html */
+/*example of id in html <h1 id="heading">Registration Form</h1> */
+/* class means the class of the element in html */
+/*example of class in html <h1 class="heading">Registration Form</h1> */
+/* elements and pseudo elements means the element itself . */
+/* example  in html <h1>Registration Form</h1> */
+/*more specific selectors will override less specific ones */
