@@ -4,15 +4,18 @@
     border:black solid ;
    
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     /* flex-direction controls which in which order the items are placed in the container */
     /* flex-direction: row;  items are placed in a row from left to right */
     /* flex-direction: column;  items are placed in a column from top to bottom */
     /* flex-direction: column-reverse;  items are placed in a column from bottom to top last element at first */
     /* flex-direction: row-reverse;  items are placed in a row from right to left last element at first */
     /*by default it is row*/
-    justify-content: flex-start;
-    /* justify distribute the space between the items in the container */
+     justify-content: flex-start;
+
+   /* align-content: flex-end; */
+   /* same as on cross axis means x axis */
+    /* justify distribute the space between the items in the container around main axis */
     /*give space around the items*/
     /* justify-content:end align items to the end of the container*/
     /* justify-content:start align items to the start of the container*/
@@ -21,12 +24,13 @@
     /* justify-content: space-around;  align items with equal space around them, but less space at the ends*/
     /* justify-content: space-between;  align items to the start and end of the container with equal space between them*/
     
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     /* flex-wrap controls whether the items in the container should wrap to the next line or not */
     /* flex-wrap: nowrap;  items will not wrap to the next line ,by default*/
     /* flex-wrap: wrap;  items will wrap to the next line if there is not enough space in the container */
     /* flex-wrap: wrap-reverse;  items will wrap to the next line in reverse order */
-    align-items:flex-end;
+    /* align-items:baseline; */
+    /* exhibits and events show in one base line */
 
 }
 div:nth-of-type(2n) {
@@ -43,7 +47,9 @@ h1{
 }
 .cont{
     height:50px;
-    width: 100px;
+    width: 70px;
    text-align:center;
-   padding-top:20px
+   font-size: 1.2em;
+   padding: 10px;
+   
 }

@@ -1,0 +1,112 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full viewport for background */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Background container */
+#t {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(15, 0, 0, 0.7)), url("Weather-Desktop-Picture.jpg") center/cover no-repeat;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-start;
+}
+.text{
+  color: #f5f7f7;
+  font-size: 1.4vw;
+  text-align: center;
+  padding-top: 20px;
+}
+.sidebar .cross{
+  position: absolute;
+  left:320px;
+ top: 15px;
+
+opacity: 0.7;
+}
+
+
+
+/* Sidebar */
+.sidebar {
+  position: absolute;
+  left: -400px;
+  width:100vw;
+  max-width: 350px;
+  height: 100vh;
+  background-color: rgba(7, 17, 13, 0.7);
+  display: flex;
+  flex-direction: column;
+
+
+  
+}
+
+/* Sidebar interactive element */
+.sidebar .se {
+  padding: 15px;
+  border: 0.000000000001px solid  rgb(80, 79, 79);
+  transition: border 0.3s ease;
+  transition-delay: 0.1s;
+}
+
+.sidebar .se:hover {
+  border: 2px solid white;
+}
+
+/* Icon styling */
+.material-symbols-outlined {
+  font-size: 10vw;
+  color: #f5f7f7;
+  cursor: pointer;
+}
+
+/* Text content */
+.le {
+  font-size: 5vw;
+  color: aliceblue;
+  line-height: 2;
+}
+
+/* Larger screen adjustments */
+@media screen and (min-width: 200px) {
+  .material-symbols-outlined {
+    font-size: 24px;
+  }
+
+  .le {
+    font-size: 16px;
+    word-spacing: 8px;
+  }
+}
+
+.social-icons a {
+  color: rgb(92, 85, 85);
+  font-size: 20px;
+  margin: 0 15px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #00aced;
+}
+#chek:checked ~.sidebar{
+  left:0
+}
+
+#chek:checked ~{
+  left:0
+}

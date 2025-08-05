@@ -1,0 +1,13 @@
+/* bootstrap is a powerful,feature-packed frontend toolkit.Bulid anything-from prototype to production in minutes
+makes development faster & Easier
+good choice for pre-built components
+good browser compatibility */
+
+.btn-success{
+
+    background-color: rgb(26, 255, 0);
+}
+.btn-outline-success{
+    border:1px solid darkgreen;
+    
+}
